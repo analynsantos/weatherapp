@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/weatherapplogo"/>
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="center_horizontal"
+        android:text="WEATHER"
+        android:textSize="50dp"
+        android:textColor="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amatic_sc"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:hint="Enter City Name"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="City Information"
+        android:textSize="20dp"
+        android:fontFamily="@font/amatic_sc"
+        android:textStyle="bold"
+        android:onClick="get"
+        android:backgroundTint="@color/bt"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="32dp"
+        android:fontFamily="@font/amatic_sc"/>
+
+</LinearLayout>
